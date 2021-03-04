@@ -21,7 +21,7 @@ Hint: Check JavaScript String charAt() Method
 
 console.log(capitalize()) */
 
-(function() {
+/* (function() {
 
     let str = "i am a web developer";
     let new_str = str.charAt(0).toUpperCase() +
@@ -29,8 +29,28 @@ console.log(capitalize()) */
     console.log(new_str);
 
 })();
-
+ */
 
 
 
 // ##############################
+
+/*
+
+2 Intermediate | Average Grade
+Make a function that will accept 3 parameters, which are the grades from Math, Physics and English. then make the calculation and print them on the screen. Make sure that the variables are numbers.
+
+E.g. If you put the following grades 3, 4, 5 the result should be:
+
+Sum:12
+
+Average: 4
+
+
+*/
+
+/* let calculate = (math, phys, engl) => {
+    console.log("Avergage:" + (math + phys + engl) / 3 + " sum :" + (math + phys + engl))
+}
+
+calculate(3, 4, 5) */
