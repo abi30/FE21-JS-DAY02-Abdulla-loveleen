@@ -16,4 +16,4 @@ let timeConverter=(minutes) =>{
 
 };
 
-timeConverter(200);
+timeConverter(21);
