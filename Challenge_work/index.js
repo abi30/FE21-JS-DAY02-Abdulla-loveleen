@@ -44,20 +44,35 @@ E.g. If we call the function and pass the number of minutes 200 we should get th
 //B) If a note is not available
 
 let withdrawal = (amount) => {
-    let atm_note100 = 200;
-    let atm_note50 = 50;
+    let atm_note100 = 3;
+    let atm_note50 = 1;
     let atm_note20 = 200;
     let atm_note10 = 100;
 
 
-    if (amount % 10 == 0) {
+    if (amount % 10 === 0) {
 
-        let note_100 = Math.floor(amount / 100);
-        let note_50 = Math.floor((amount % 100) / 50);
-        let note_20 = Math.floor((amount % 50) / 20);
-        let note_10 = Math.floor((amount % 20) / 10);
+       
+        if(atm_note100 > Math.floor(amount / 100)){
+          
+            var note_100 = Math.floor(amount / 100);
+          }
+                else{
+                    return "please ATM should be filled"
+                }
+
+                if(atm_note50 > Math.floor(amount % 100) / 50){
+          
+                    var note_50 = Math.floor((amount % 100) / 50);
+                  }
+                        else{
+                            return "please ATM should be filled"
+                        }
 
 
+                let note_20 = Math.floor((amount % 50) / 20);
+                let note_10 = Math.floor((amount % 20) / 10);
+    
 
 
         var result = [note_100, note_50, note_20, note_10];
@@ -70,8 +85,7 @@ let withdrawal = (amount) => {
 
 
 
-
 };
 
 
-console.log(withdrawal(15));
+console.log(withdrawal(250));
