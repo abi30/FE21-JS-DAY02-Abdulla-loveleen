@@ -11,7 +11,7 @@ let timeConverter=(minutes) =>{
 
     let rest_minute = (minutes % 60);
 
-    console.log(`${minutes} minutes = ${hour} hour(s) and ${rest_minute} minute(s)`)
+    console.log(`${minutes} minutes = ${hour} hour(s) and ${rest_minute} minute(s)`);
 
 
 };
