@@ -7,7 +7,7 @@ E.g. If we call the function and pass the number of minutes 200 we should get th
 
 
 
- let withdrawal =(amount)=>{
+/* let withdrawal =(amount)=>{
      
     if (amount%10==0){
         let note_100=Math.floor(amount/100);
@@ -38,4 +38,40 @@ E.g. If we call the function and pass the number of minutes 200 we should get th
     // console.log(`note of 20's ${(withdrawal(390)[2])}`);
     // console.log(`note of 10's ${(withdrawal(390)[3])}`);
 
-    console.log(withdrawal(15));
+    console.log(withdrawal(15)); */
+
+
+//B) If a note is not available
+
+let withdrawal = (amount) => {
+    let atm_note100 = 200;
+    let atm_note50 = 50;
+    let atm_note20 = 200;
+    let atm_note10 = 100;
+
+
+    if (amount % 10 == 0) {
+
+        let note_100 = Math.floor(amount / 100);
+        let note_50 = Math.floor((amount % 100) / 50);
+        let note_20 = Math.floor((amount % 50) / 20);
+        let note_10 = Math.floor((amount % 20) / 10);
+
+
+
+
+        var result = [note_100, note_50, note_20, note_10];
+        return result;
+    } else {
+
+        return "please start from 10 Euro!";
+
+    }
+
+
+
+
+};
+
+
+console.log(withdrawal(15));
