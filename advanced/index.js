@@ -5,7 +5,7 @@ E.g. If we call the function and pass the number of minutes 200 we should get th
 
  */
 
-function timeConverter(minutes) {
+let timeConverter=(minutes) =>{
 
     let hour = Math.floor(minutes / 60);
 
@@ -14,6 +14,6 @@ function timeConverter(minutes) {
     console.log(`${minutes} minutes = ${hour} hour(s) and ${rest_minute} minute(s)`)
 
 
-}
+};
 
 timeConverter(200);
